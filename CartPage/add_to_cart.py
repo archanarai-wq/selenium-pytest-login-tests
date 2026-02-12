@@ -18,8 +18,8 @@ class AddToCart:
         time.sleep(2)
 
     def check_badge(self,n):
-        check_badge=self.driver.find_element(*self.cart_badge)
-        assert check_badge.text==n
+        check_badge=self.driver.find_element(*self.cart_badge).text
+        assert check_badge==n
         print(n, " items selected")
         time.sleep(1)
 
