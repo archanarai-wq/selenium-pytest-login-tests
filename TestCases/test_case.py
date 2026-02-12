@@ -1,4 +1,6 @@
 from CartPage.add_to_cart import AddToCart
+from HomePage.verify_product import verification
+from Login.invalidLogin import InvalidLog
 
 
 def test_valid1(driver, valid_login):
