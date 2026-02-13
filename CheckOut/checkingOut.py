@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class Checkout:
     def __init__(self,driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
+        self.wait = WebDriverWait(driver, 5)
         self.checking=(By.XPATH,"//button[@id='checkout']")
         self.name=(By.XPATH,"//input[@id='first-name']")
         self.title=(By.XPATH,"//input[@id='last-name']")
